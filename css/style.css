@@ -1,0 +1,1053 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ###################### utility class ############################# */
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+.btn{
+    display: inline-block;
+    padding: 1em 2.5em;
+    font-size: medium;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 2em;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.btn-primary{
+    color: #fff;
+    background: lightgreen;
+}
+.btn-secondary{
+    color: lightgreen;
+    background: #ff9;
+}
+.text-black{
+    color: #000;
+}
+
+/* ####################### header styling ################################ */
+
+.header{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1)) ,url("../images/firstbgg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navbar{
+    width: 100%;
+    height: 15vh;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+.menu-items{
+    order: 2;
+    display: flex;
+}
+.menu-items li{
+    list-style: none;
+    margin-left: 1.8rem;
+    font-size: 1.8rem;
+}
+
+.menu-items li:first-child{
+    margin-left: 0;
+}
+.menu-items li:last-child{
+    margin-right: 0;
+}
+.logo{
+    order: 1;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+.navbar a:hover{
+    color: yellowgreen;
+}
+
+/* # ############################ header content styling############### */
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 100%;
+    /* margin: ; */
+}
+.header-content p{
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+.main-title{
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 100;
+}
+.edited-title{
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+/* ################################### home area styling ######################## */
+
+.home-area{
+    padding: 50px 0;
+    background: #fff;
+}
+.text-frame{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+}
+.text-frame .small{
+    font-size: 2rem;
+    color: yellowgreen;
+    font-weight: 600;
+}
+.text-frame h1{
+    font-size: 3.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.text-frame p{
+    font-size: 1.6rem;
+    margin-top: 1.6rem;
+    color: rgb(95, 82, 82);
+}
+
+/* #######################about text styling###################### */
+.about-page{
+    padding: 50px 0;
+    background: #fff;
+}
+.about-page{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-img{
+    flex: 1 1 400px;
+    padding: 30px;
+}
+.about-text{
+    flex: 1 1 400px;
+    padding: 30px;
+}
+.about-img img{
+    display: block;
+    height: 500px;
+    max-width: 100%;
+    margin: auto;
+    object-fit: cover;
+    object-position: left;
+}
+
+.about-text .small{
+    font-size: 2rem;
+    color: yellowgreen;
+    font-weight: 600;
+}
+.about-text h2{
+    font-size: 3rem;
+    margin-top: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1;
+}
+.about-text p{
+    font-size: 1.6rem;
+    margin-top: 1.6rem;
+    color: rgb(95, 82, 82);   
+}
+.percentage{
+    padding: 30px 0;
+    background: #fff;
+}
+.percentage{
+    display: flex;
+}
+.percentage .nine{
+    display: block;
+    margin: 3px;
+    padding: 0rem;
+    width: 100%;
+}
+.percentage .nine img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* #####################services styling################################### */
+
+.services-area{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1)) ,url("../images/secondbg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.service-description{
+    width: 85%;
+    display: flex;
+    padding: 60px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+.service-para{
+    color: #fff;
+    font-size: 1.6rem;
+    width: 40%;
+}
+.service-head h2{
+    color: yellowgreen;
+    font-size: 2rem;
+}
+.service-head h1{
+    color: #fff;
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+
+.service-wrapper{
+    padding: 50px 0 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    
+}
+.service-types{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 600px;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+.service-wrapper .service-kinds{
+    background: #fff;
+    margin: 1.5rem 1.5rem;
+    display: block;
+    width: 320px;
+    height: 220px;
+    justify-content: center;
+    text-align: center;
+    padding: 1.8rem;
+}
+.service-tag{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color:yellowgreen;
+    padding: 1.3rem;
+}
+.service-txt{
+    font-size: 1.4rem;
+    color: rgb(114, 104, 104);
+    padding: 1.3rem;
+}
+
+/* ############################ gallery styling ##################### */
+
+.gallery{
+    padding: 50px 0;
+    background: #fff;
+}
+.gallery-container{
+    width: 85%;
+    display: flex;
+    margin: auto;
+    padding: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.text-gallery{
+    font-size: 1.6rem;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-heading{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.gallery-h2{
+    font-size: 2.1rem;
+    color: yellowgreen;
+}
+.gallery-h1{
+    font-size: 3.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+/* ################################ icon items styling ######################## */
+
+.icon-section{
+    padding: 5rem 0rem;
+    background: yellowgreen;
+}
+.icon-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    padding: 1rem;
+}
+.icon-box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.icon-container .icon-color{
+    color: #fff;
+    margin: 0;
+}
+
+.icon-set{
+    display: block;
+    margin: auto;
+    justify-content: space-between;
+    text-align: center;
+    /* padding: 3.6rem; */
+
+}
+.icon-set h2{
+    font-size: 3.6rem;
+    margin-bottom: 1.6rem;
+    font-weight: 400;
+    color: #000;
+}
+.icon-set h1{
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ feature styling@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.feature{
+    padding: 50px 0;
+    background: #f5f5f7;
+}
+.feature-text{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    
+}
+.feature-para p{
+    color: lightslategray;
+    font-size: 1.6rem;
+    width: 80%;
+}
+.feature-head h2{
+    color: yellowgreen;
+    font-size: 2rem;
+}
+.feature-head h1{
+    color: #000;
+    margin-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5rem;
+    font-weight: 200;
+}
+
+.feature-container{
+    display: flex;
+}
+.feature-image{
+    flex: 1 1 300px;
+    padding: 30px;
+}
+.feature-text-container{
+    flex: 1 1 300px;
+    padding: 30px;
+    margin: auto;
+}
+.feature-image img{
+    display: block;
+    width: 90%;
+    max-width: 100%;
+    height: 500px;
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.feature-text-container{
+display: flex;
+flex-direction: column;
+
+}
+.feature-text-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    
+}
+.feature-text-wrap{
+    box-shadow: 5px 5px 10px 10px #aaa;
+    border-radius: 20px;
+    width: 90%;
+    /* padding: 10px; */
+    margin-bottom: 5rem;
+}
+.feature-text-container i{
+    display: block;
+}
+.checked{
+    display: flex;
+    justify-content: space-between;
+}
+
+.txttt{
+    padding-left: 9rem;
+}
+.checked h1{
+    color: yellowgreen;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.checked p{
+    color: lightslategray;
+    font-size: 1.6rem;
+}
+.feature-text-container .iconz{
+    display: block;
+    object-position: center;
+}
+
+/* ########################### plans styling ##################################### */
+
+.plans{
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1)) ,url("../images/thirdbg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.plans-container{
+    width: 85%;
+    display: flex;
+    padding: 50px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+.plans-para{
+    color: #fff;
+    font-size: 1.6rem;
+    width: 40%;
+}
+.plans-head h2{
+    color: yellowgreen;
+    font-size: 2rem;
+}
+.plans-head h1{
+    color: #fff;
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+
+.plans-wrapper{
+    padding: 50px 0 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    
+}
+.plans-types{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex: 1 1 600px;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1rem;
+
+}
+.plans-wrapper .plans-kinds{
+    background: #fff;
+    margin: 1rem 1.5rem;
+    display: block;
+    width: 260px;
+    height: 350px;
+    justify-content: center;
+    text-align: center;
+    padding: 1.8rem;
+}
+.plans-tag{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color:yellowgreen;
+    padding: 1.3rem;
+    margin-bottom: 1.6rem;
+}
+.plans-headd{
+    color: goldenrod;
+    font-size: 2.2rem;
+}
+.plans-txt{
+    font-size: 1.4rem;
+    width: 60%;
+    color: rgb(114, 104, 104);
+    padding: 2rem 0 0 8rem;
+}
+.plans-kinds a{
+    width: 60%;
+    display: block;
+    margin: 2.2rem 1rem 2.0rem 4.6rem ;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    font-size: 2rem;
+    transition: 0.5s ease-in-out ;
+    color: #fff;
+    background:yellowgreen;
+}
+.plans-kinds a:hover{
+    background-color: black;
+}
+
+/* ############################### clients styling ################################## */
+
+.clients{
+    height: 90vh;
+    padding: 50px 0;
+}
+.clients .clients-text{
+    width: 70%;
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    
+}
+.clients .clients-text p{
+    color: lightslategray;
+    font-size: 1.6rem;
+    width: 80%;
+}
+.clients .clients-head{
+    display: inline-block;
+}
+
+.clients .clients-head h2{
+    color: yellowgreen;
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+}
+.clients .clients-head h1{
+    color: yellowgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    color: #000;
+}
+
+.clients-container{
+    padding: 50px 0;
+    margin: 4.6rem 25rem;    
+}
+.clients .clients-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.clients-wrapper{
+    display: inline-block;
+    width: 30%;
+    /* padding: 50px 0 30px 0; */
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center; */
+    padding-left: 1rem;
+
+}
+.clients-wrapper img{
+    display: block;
+    border: 5px solid rgb(139, 129, 129);
+    width: 70%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 4rem;
+}
+.clients-wrapper .clients-head{
+    color: yellowgreen;
+    font-size: 3.2rem;
+}
+.clients-wrapper h2{
+    font-size: 1.9rem;
+}
+.clients-wrapper .clients-para{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+/* ############################video styling ############  */
+
+.videos{
+    height: 30vh;
+    padding: 20px 0;
+    background: yellowgreen;
+}
+.videos .video-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.video-container{
+    height: 200px;
+}
+.video-container .video-play{
+    display: flex;
+    justify-content: center;
+    
+
+}
+.video-description .video-heading{
+    display: flex;
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    
+}
+.video-description p{
+    font-size: 1.6rem;
+}
+
+/* ######################### team styling ################### */
+
+#team{
+    height: 85vh;
+    padding: 50px 0;
+}
+#team .volunteer-container{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    
+}
+#team .volunteer-para p{
+    color: lightslategray;
+    font-size: 1.6rem;
+    width: 80%;
+}
+#team .volunteer-head{
+    display: inline-block;
+}
+
+#team .volunteer-head h2{
+    color: yellowgreen;
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+}
+#team .volunteer-head h1{
+    color: yellowgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    color: #000;
+}
+
+
+.volunteer-container-main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.volunteer-wrapper-box{
+    margin: 50px 0;
+    width: 300px;
+    border-radius: 5px;
+    /* box-shadow: 0 0 8px 2px rgba(24, 23, 23, 0.5); */
+    overflow: hidden;
+}
+.volunteer-wrapper-box img{
+    width: 90%;
+    height: auto;
+}
+.volunteer-description{
+    padding: 20px 50px;
+}
+.volunteer-description h2{
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: yellowgreen;
+}
+.volunteer-description p{
+    font-size: 1.8rem;
+    padding-left: 3rem;
+    margin-top: 1rem;
+}
+
+.volunteer-icon{
+    width: 65%;
+    padding-left: 5rem;
+    display: flex;
+    justify-content: space-around;
+}
+.volunteer-icon .styln{
+    color: #000;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+/* ###################### blogs styling ######################### */
+
+.blogs{
+    background-color: yellowgreen;
+    height: 110vh;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1)) ,url("../images/forurthbg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blog-heading-container{
+    width: 50%;
+    display: flex;
+    padding: 50px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; 
+}
+.blogs-para{
+    color: #fff;
+    font-size: 1.6rem;
+    width: 70%;
+}
+.blogs-head h2{
+    color: yellowgreen;
+    font-size: 2rem;
+}
+.blogs-head h1{
+    color: #fff;
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+
+
+.blogs-container-main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.blogs-wrapper-box{
+    margin: 50px 0;
+    width: 300px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 0 8px 2px rgba(247, 236, 236, 0.5);
+    overflow: hidden;
+}
+.blogs-wrapper-box img{
+    display: block;
+    width: 90%;
+    margin: 1.6rem;
+    object-fit: cover;
+    object-position: center;
+    height: auto;
+}
+.blogs-description{
+    padding: 1.6rem;
+}
+.blogs-description h2{
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: yellowgreen;
+    margin: 1rem 0;
+}
+.blogs-description p{
+    font-size: 1.8rem;
+    /* padding-left: 1.6rem; */
+    /* margin-top: 1rem; */
+}
+.blogs-botton-style{
+    display: flex;
+    justify-content: space-between;
+}
+.blogs-botton-style{
+    margin: 1rem 0;
+    padding:0 1.6rem;
+    font-size: 1.6rem;
+}
+
+
+/* ##################### contact styling#################### */
+
+#contact{
+    height: 80vh;
+    /* background: rgb(163, 51, 51); */
+    
+}
+
+.contact-heading-container{
+    /* width: 50%; */
+    display: flex;
+    padding: 50px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+.contact-para{
+    font-size: 1.6rem;
+    width: 40%;
+}
+.contact-head h2{
+    color: yellowgreen;
+    font-size: 2rem;
+}
+.contact-head h1{
+    margin-top: 1rem;
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+
+.contact-wrapper{
+    padding: 50px 0;
+}
+.contact-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-form-box{
+    margin-left: 2rem;
+    padding: 1rem;
+    /* margin: auto; */
+    /* background: rgb(187, 57, 57); */
+    width: 50%;
+}
+
+.contact-form-box input, .contact-form-box textarea{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgb(41, 40, 40);
+    padding: 1rem 0;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 1rem;
+    color: black;
+    font-weight: 200;
+    background: rgb(245, 243, 243);
+}
+
+.contact-form-box input, .contact-form-box textarea{
+    padding: 1.6rem;
+    font-family: cursive;
+}
+
+.contact-details-box{
+    padding: 1rem;
+    width: 45%;
+}
+
+.contact-form-box .form-button{
+    width: 100%;
+    padding: 1.6rem;
+    margin: 2rem 0;
+}
+.contact-form-box .form-button{
+    display: block;
+    color: #fff;
+    background: yellowgreen;
+    border-radius: 3rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+}
+
+
+.contact-details-box{
+    display: flex;
+    flex-direction: column;
+}
+.contact-details-box .contact-address{
+    display: flex;
+    justify-content: space-evenly;
+}
+.address-details h2{
+    font-size: 2.6rem;
+    color: yellowgreen;
+    margin-bottom: 1.9rem;
+}
+.address-details p{
+    font-size: 1.6rem;
+}
+.address-details{
+    margin-bottom: 3rem;
+}
+
+.contact-details-box .contact-phone{
+    display: flex;
+    justify-content: space-evenly;
+}
+.phone-details h2{
+    font-size: 2.6rem;
+    color: yellowgreen;
+    margin-bottom: 1.9rem;
+}
+.phone-details p{
+    font-size: 1.6rem;
+}
+.phone-details{
+    margin-bottom: 3rem;
+}
+.contact-para-gap{
+    margin-bottom: 1.3rem;
+}
+
+.contact-details-box .contact-email{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.email-details h2{
+    font-size: 2.6rem;
+    color: yellowgreen;
+    margin-bottom: 1.9rem;
+}
+.email-details p{
+    font-size: 1.6rem;
+}
+.email-details{
+    margin-bottom: 3rem;
+}
+
+.contact-address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* #################### map styling ####################### */
+
+.map{
+    height: 35vh;
+    width: 100%;
+    border: 1px solid rgb(43, 42, 42);
+    margin: 40px 0;
+}
+.map .map-container{
+    padding: 0.8rem;
+    
+}
+
+.map-container .main-map p{
+    border: 1px solid #aaa;
+
+}
+
+
+/* ######################## footer styling ############# */
+
+.footer{
+    height: 20vh;
+    padding: 20px 0;
+    background: yellowgreen;
+}
+.footer-main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.footer-wrapper p{
+    font-size: 2rem;
+}
+.footer-wrapper p::after{
+    content: " Aayush";
+    color: rgb(0, 0, 0);
+    font-size: 2.6rem;
+    font-family: cursive;
+    font-weight: 600;
+}
+.footer-icon{
+    margin: 1.6rem 0;
+}
+
+
+
+
